@@ -1,6 +1,7 @@
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+This is the First Angular app I have created.It's a Book-shop app , where people can register,login if he is already registered, check for the book he/she want and add to cart.For the authentication I have used Firebase.
 
 ## Development server
 
