@@ -1,0 +1,28 @@
+<div class="form">
+  <form action="" #myForm="ngForm">
+    <h3>Login</h3>
+    <div class="fields">
+
+      <label for="email">Email</label><br>
+      <input type="text" placeholder="Email Address"  [(ngModel)]="form.email" name="email" #email="ngModel" required>
+    </div>
+    <div class="errorinfo" *ngIf="email.invalid && (email.dirty || email.touched)">
+      Email Field must be valid
+    </div>
+    <div class="fields" >
+      <label for="password">Password</label><br>
+      <input type="password" placeholder="Password" [(ngModel)]="form.password" name="password" #password="ngModel" required>
+    </div>
+    <div class="errorinfo" *ngIf="password.invalid && (password.dirty || password.touched)">
+      Password Field must be valid
+    </div>
+    <button [disabled]="myForm.form.invalid" (click)="submit()">
+      <ng-container *ngIf="isLoading()">
+        Loading...
+      </ng-container>
+      <ng-container *ngIf="!isLoading()">
+        Submit
+      </ng-container>
+      </button>
+  </form>
+</div>

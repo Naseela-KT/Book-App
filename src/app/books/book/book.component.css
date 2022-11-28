@@ -1,0 +1,28 @@
+/* .book{
+  display: flex;
+
+} */
+li{
+
+  text-align: center;
+  list-style: none;
+  text-overflow: ellipsis;
+
+}
+div{
+padding: 5px;
+display: inline-block;
+width: 40%;
+border: 1px solid black;
+margin: 20px 40px;
+border-radius: 15px;
+}
+img{
+  float: left;
+  padding: 30px;
+  margin-top: 0;
+  width:150px;
+}
+p{
+  padding-top: 10px;
+}
